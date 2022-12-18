@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>태평소 오시는길</title>
+    <link rel="icon" href="./pictures/로고.png" />
+
+    <!--브라우저 스타일 초기화-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css"
+    />
+    <!--Google Fonts - 나눔고딕-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!--Google Material Icons-->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+
+    <link rel="stylesheet" href="./css/main.css" />
+
+    <!--GSAP & ScrollToPlugin-->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
+      integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollToPlugin.min.js"
+      integrity="sha512-nTHzMQK7lwWt8nL4KF6DhwLHluv6dVq/hNnj2PBN0xMl2KaMm1PM02csx57mmToPAodHmPsipoERRNn4pG7f+Q=="
+      crossorigin="anonymous"
+    ></script>
+    <!--Swiper-->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.css"
+    />
+    <script src="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.js"></script>
+    <!--ScrollMagic-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
+    <!--Lodash-->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.20/lodash.min.js"
+      integrity="sha512-90vH1Z83AJY9DmlWa8WkjkV79yfS2n2Oxhsi2dZbIv0nC4E6m5AbH8Nh156kkM7JePmqD6tcZsfad1ueoaovww=="
+      crossorigin="anonymous"
+    ></script>
+
+    <script defer src="./js/youtube.js"></script>
+    <script defer src="./js/main.js"></script>
+  </head>
+  <body>
+    <!--HEADER-->
+    <header>
+      <div class="inner">
+        <a href="/" class="logo">
+          <img
+            src="./pictures/로고.png"
+            alt="태평소 로고"
+            width="230"
+            height="98"
+          />
+        </a>
+        <ul class="main-menu">
+          <li class="item">
+            <div class="item__name">메뉴</div>
+            <div class="item__contents">
+              <div class="contents__menu">
+                <ul class="inner">
+                  <li>
+                    <a onclick="location.href='고기2.html'"><h4>고기류</h4><a>
+                    <ul>
+                      <li>가브리살</li>
+                      <li>갈비살</li>
+                      <li>돼지갈비</li>
+                      <li>막창</li>
+                      <li>목살</li>
+                      <li>살치살</li>
+                      <li>삼겹살</li>
+                      <li>양념갈매기살</li>
+                      <li>항정살</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a onclick="location.href='식사2.html'"><h4>식사류</h4><a>
+                    <ul>
+                      <li>김치찌개</li>
+                      <li>된장찌개</li>
+                      <li>된장소면</li>
+                      <li>물냉면</li>
+                      <li>비빔냉면</li>
+                      <li>열무소면</li>
+                      <li>육회</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a onclick="location.href='주류2.html'"><h4>주류</h4><a>
+                    <ul>
+                      <li>참이슬</li>
+                      <li>처음처럼</li>
+                      <li>진로</li>
+                      <li>카스</li>
+                      <li>테라</li>
+                      <li>사이다</li>
+                      <li>콜라</li>
+                      <li>환타</li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="item">
+            <div class="item__name">게시판</div>
+            <div class="item__contents">
+              <div class="contents__menu">
+                <ul class="inner">
+                  <li>
+                    <a onclick="location.href='공지사항2.html'"><h4>태평소 소식</h4></a>
+                    <ul>
+                      <li>공지사항</li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="item">
+            <div class="item__name"><a onclick="location.href='오시는길.html'" style="cursor:pointer"><h4>매장</h4></a></div>
+            <div class="item__contents">
+              <div class="contents__menu">
+                <ul class="inner">
+                  <li>
+                    <a onclick="location.href='오시는길.html'"><h4>오시는 길</h4></a>
+                    <ul>
+                      <li>1호점</li>
+                      <li>2호점</li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <!--VISUAL-->
+    <section class="visual">
+      <div class="inner"></div>
+    </section>
+
+    <!--NOTICE-->
+    <style>
+      table {
+        border-collapse: collapse;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      table tr td,
+      th {
+        border: 1px solid gray;
+        text-align: center;
+        padding: 5px;
+      }
+    </style>
+    <body>
+        <h1
+        style="
+          text-align: center;
+          font-weight: bold;
+          margin-bottom: 30px;
+          margin-top: 30px;
+          font-size: 30px;
+        "
+      >태평소 공지사항</h1>
+      <br />
+      <br />
+      <div>
+      <table>
+        <tr>
+          <th>번호</th>
+          <th>제목</th>
+          <th>닉네임</th>
+          <th>조회수</th>
+          <th>날짜</th>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>
+            임시휴무 추석휴무안내 태평소 퇴계본점과 스무숲점은 9월10일(토) 추석
+            당일 하루만 휴무입니다~^^ 즐거운 추석보내세요 기간 2022.09.10.
+          </td>
+          <td>태평소 관리자</td>
+          <td>1</td>
+          <td>0000-00-00</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>2,4째 주 일요일 정상영업합니다. 365일 영업합니다.</td>
+          <td>태평소 관리자</td>
+          <td>1</td>
+          <td>0000-00-00</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>홈플러스 맞은편 태평소 본점 5월 29일 재오픈!(리모델링 완료)</td>
+          <td>태평소 관리자</td>
+          <td>1</td>
+          <td>0000-00-00</td>
+        </tr>
+      </table>
+      <div style="padding-top: 15px">
+        <!--클릭시 관리자만 접근 가능합니다 알람-->
+        <button onclick="Click()" style="margin-left: 1300px;">글쓰기</button>
+      </div>
+    </div>
+    </body>
+    <!--PROMOTION-->
+
+    <!--FOOTER-->
+    <footer>
+      <div class="inner">
+        <ul class="menu">
+          <li>
+            <a href="javascript:void(0)">개인정보처리방침</a>
+          </li>
+          <li>
+            <a href="javascript:void(0)">회사소개</a>
+          </li>
+          <li><a href="javascript:void(0)">홈페이지 이용약관</a></li>
+          <li><a href="javascript:void(0)">위치정보 이용약관</a></li>
+          <li><a href="javascript:void(0)">매장소개</a></li>
+        </ul>
+
+        <div class="btn-group">
+            <a onclick="location.href='오시는길.html'" class="btn btn--white">찾아오시는 길</a>
+          <a href="javascript:void(0)" class="btn btn—white">사이트 맵</a>
+        </div>
+
+        <div class="info">
+          <span>사업자등록번호 000-00-00000</span>
+          <span>태평소사장: 지용환</span>
+          <span>TEL : 033) 261-0953 / FAX : 00) 0000-0000</span>
+        </div>
+
+        <p class="copyright">
+          &copy; <span class="this-year"></span>TaePyeongSo All Rights Reserved.
+        </p>
+        <img src="./pictures/로고2.png" alt="태평소" class="logo" />
+      </div>
+    </footer>
+
+    <!—TO TOP BUTTON—>
+    <div id="to-top">
+      <div class="material-icons">arrow_upward</div>
+    </div>
+  </body>
+</html>
